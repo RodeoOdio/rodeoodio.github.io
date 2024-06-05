@@ -1,120 +1,51 @@
-/* General setup */
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
 
-* {
-    box-sizing: border-box;
-}
+        /* 
+        
+        Spacing 
 
-html {
-    font-size:16px;
-}
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
 
-body {
-    margin: 1.5rem auto;
-    width:90%;
-    min-width:56.25rem;
-}
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
 
-/* Layout */
+            - letter-spacing, word-spacing, line-height
 
-main {
-    overflow:auto;
-    min-width:45rem;
-    
-}
+            - width, max-width, min-width
+            - height, max-height, min-height
 
-section {
-    float: left;
-    min-width: 22.5rem;
-    width:50%;
-}
+        Typography 
 
-figure {
-    width:60%;
-    margin:0 10% 0 0;
-    float:left;
-}
+            - font-family, font-size, font-style, font-weight
 
-figure img {
-    width:100%;
-    max-width:25rem;
-}
+            - text-decoration, text-align
 
-figcaption {
-    margin:.375rem 0;
-}
+            - color
 
-.long-list {
-    margin-top:0;
-}
+            - text-shadow, text-transform
 
-nav {
-    float: left;
-    width:11.25rem;
-}
+        Box, Layout and Border 
 
-footer {
-    clear: both;
-    margin-top:1.5rem;
-}
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
 
-section, aside, nav, footer {
-  padding: .5rem;
-}
+            - box-shadow
 
-/* header and footer */
+            - display, float, align-items, align-content
 
-header, footer {
-  border-top: .125rem solid #33658A;
-  border-bottom: .125rem solid #33658A;
-}
+            - grid-template-columns, grid-column-gap
 
-/* ------ START WRITING YOUR CODE BELOW THIS LINE ------ */
+            - transform
 
-/* NO changes should be made to any of the code above. */
+        Other
 
-/* NOTE: While you will be using some of the same CSS properties, the VALUES 
-   may need to be different in order to style the page correctly. */
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
 
 
-
-/* Imported Typfaces */
-
-
-
-
-
-/* Typography Styles */
-
-
-
-
-
-
-/* Link Styling */
-
-
-
-
-
-
-/* List Styling */
-
-
-
-
-
-
-/* Navigation Menu */
-
-
-
-
-
-
-/* Footer Styles */
-
-
-
-
+/* ------ START WRITING YOUR CODE BELOW ------ */
 
 
