@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="John Durham">
+        <meta name="author" content="Ifeanyi Odoh">
         <title>Franzen Irony University</title>
         
         <!-- Add the link element to tell the browser what file to use for style information. -->
@@ -86,3 +86,112 @@
         </footer>
     </body>
 </html>
+/* imported typefaces */
+@font-face {
+    /* declarations for importing first typeface */
+}
+
+@font-face {
+    /* declarations for importing second typeface */
+}
+
+/* typography */
+body {
+    font-family: 'Montserrat', sans-serif; /* Replace 'Montserrat' with the name of your first typeface */
+}
+
+h1 {
+    font-family: 'Josefinslab', serif; /* Replace 'Josefinslab' with the name of your second typeface */
+    font-size: 60px;
+    margin: 18px 0;
+    text-align: center;
+    letter-spacing: 2rem;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p,
+ul,
+ol {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+}
+
+h2 + p {
+    text-indent: 24px;
+}
+
+figcaption {
+    font-size: 12px;
+    margin-bottom: 32px;
+}
+
+/* links */
+a {
+    color: #33658A;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #33658A;
+    text-decoration: none;
+    outline: none;
+}
+
+/* lists */
+ul,
+ol {
+    margin: 16px 0;
+    padding-left: 0;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
+
+.long-list:hover a {
+    text-transform: uppercase;
+}
+
+/* nav */
+nav {
+    padding-left: 0;
+    margin-top: 4px;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 24px;
+    border: 1px solid #33658A;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #FFF;
+    background-color: #33658A;
+}
+
+nav a:active {
+    color: #FFF;
+    background-color: #000;
+}
+
+/* footer */
+footer {
+    text-align: center;
+}
