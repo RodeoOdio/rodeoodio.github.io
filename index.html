@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="John Durham">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ifeanyi Odoh">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
 
+    <header>
         <!-- Wrap the top-level heading in a header element -->
-        
-            <h1>Planets Data</h1>
-        
+        <h1>Planets Data</h1>
+    </header>
+
+    <main>
         <!-- Add a main element to contain the table -->
+        <table>
+            <!-- Add the table element. This will contain your table caption, column group, table head, table body, and the data. -->
+            <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
             
-            <!-- Add the table element. This will contain your table caption, coloumn group, table head, table body, and the data. -->
-                
-                <!-- The caption element should be the first child of the table element, and wrap the following text and link.-->
-        
-                Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
-        
-                <!-- The second child of the table element should be the colgroup element, which also contains several col elements, and helps define the purpose of the table colums. -->
-                    
-                <!-- The table head element should be the third child of the table element; it will wrap the code and content to define a row of column headers. -->    
-                
-                <!-- The fourth child of the table element should be the table body element, which will contain the code and content to display rows of data. -->
-                    
-                <!-- Please note that you do NOT need to add a table footer for this assignment. -->
-    </body>
+            <!-- Add the colgroup element, which helps define the purpose of the table columns. -->
+            <colgroup>
+                <!-- Add col elements here to define the columns of the table -->
+                <col title="Planet Name">
+                <col title="Mean Distance from Sun (in million km)">
+            </colgroup>
+
+            <!-- Add the table head element, defining a row of column headers. -->
+            <thead>
+                <tr>
+                    <!-- Add th elements for each column header -->
+                    <th scope="col">Planet Name</th>
+                    <th scope="col">Mean Distance from Sun (in million km)</th>
+                    <!-- Add more headers if needed -->
+                </tr>
+            </thead>
+
+            <!-- Add the table body element, containing rows of data -->
+            <tbody>
+                <!-- Add tr elements for each row -->
+                <tr>
+                    <!-- Add td elements for each cell in the row -->
+                    <td scope="rowgroup" rowspan="2">Mercury</td>
+                    <td>57.9</td>
+                </tr>
+                <tr>
+                    <td>59.7</td>
+                </tr>
+                <tr>
+                    <td scope="row">Venus</td>
+                    <td>108.2</td>
+                </tr>
+                <!-- Add more rows as necessary -->
+            </tbody>
+        </table>
+    </main>
+</body>
 </html>
+
