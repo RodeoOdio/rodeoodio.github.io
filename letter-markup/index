@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+        
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .sender-column {
+            text-align: right;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 1.3rem;
+        }
+        
+        p,
+        ul,
+        ol,
+        dl,
+        address {
+            font-size: 1.1rem;
+        }
+        
+        p,
+        li,
+        dd,
+        dt,
+        address {
+            line-height: 1.5;
+        }
+        
+        address {
+            font-style: normal;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Re: Welcome to the New Semester</h1>
+
+    <p>Dear <strong>Students</strong>,</p>
+
+    <p>We are excited to welcome you to the start of the new semester. Below you will find important information regarding the semester start dates, study subjects, and upcoming events.</p>
+
+    <h2>Semester Start Dates:</h2>
+    <ul>
+        <li>Undergraduate Courses: <time datetime="2024-08-15" class="sender-column">August 15</time></li>
+        <li>Graduate Courses: <time datetime="2024-08-17">August 17</time></li>
+        <li>Professional Development Workshops: <time datetime="2024-08-20">August 20</time></li>
+    </ul>
+
+    <h2>Study Subjects:</h2>
+    <ol>
+        <li>Mathematics</li>
+        <li>Science</li>
+        <li>Literature</li>
+    </ol>
+
+    <h2>Upcoming Events:</h2>
+    <p>We are excited to announce that we will be hosting a series of exotic dance workshops every Friday evening starting from <time datetime="2024-09-01">September 1st</time>. Come join us for a fun and energetic experience!</p>
+
+    <address class="sender-column">
+        <strong>Ifeanyi Odoh</strong><br>
+        1201 E Helena Ave<br>
+        Ellensburg, WA 98926
+    </address>
+
+    <address>
+        <strong>Jane Smith</strong><br>
+        456 Elm Street<br>
+        Seattle, USA 54321
+    </address>
+
+    <p>Thank you, and we look forward to a successful semester!</p>
+
+    <p>Sincerely,<br>Academic Department</p>
+
+    <p>The university motto "<em>Learn, Discover, Innovate</em>" is our guiding principle.<sup>1</sup></p>
+
+    <p><sup>1</sup> Source: University Handbook, Chapter 3, Section 2</p>
+</body>
+</html>
 
