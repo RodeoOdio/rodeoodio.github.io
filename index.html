@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="John Durham">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ifeanyi Odoh">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
 
-        <!-- Wrap the top-level heading in a header element -->
-        
-            <h1>Planets Data</h1>
-        
-        <!-- Add a main element to contain the table -->
+    <!-- Wrap the top-level heading in a header element to create a page heading -->
+    <header>
+        <h1>Planets Data</h1>
+    </header>
+
+    <!-- Add a main container to wrap the table -->
+    <main>
+        <!-- Define the table element with caption, column group, table head, and table body -->
+        <table>
+            <!-- Caption that wraps the existing text and link -->
+            <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
             
-            <!-- Add the table element. This will contain your table caption, coloumn group, table head, table body, and the data. -->
-                
-                <!-- The caption element should be the first child of the table element, and wrap the following text and link.-->
-        
-                Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
-        
-                <!-- The second child of the table element should be the colgroup element, which also contains several col elements, and helps define the purpose of the table colums. -->
-                    
-                <!-- The table head element should be the third child of the table element; it will wrap the code and content to define a row of column headers. -->    
-                
-                <!-- The fourth child of the table element should be the table body element, which will contain the code and content to display rows of data. -->
-                    
-                <!-- Please note that you do NOT need to add a table footer for this assignment. -->
-    </body>
+            <!-- Column group -->
+            <colgroup>
+                <!-- Define col elements to represent each column of the table -->
+                <!-- The first col element spans two columns -->
+                <col span="2" title="Group"> <!-- Title added to associate with the corresponding column -->
+                <col title="Planet Name"> <!-- Title added to associate with the corresponding column -->
+                <col title="Mean Radius"> <!-- Title added to associate with the corresponding column -->
+                <!-- Add more col elements if you have more columns -->
+            </colgroup>
+            
+            <!-- Table head -->
+            <thead>
+                <!-- Row for table head containing column headers -->
+                <tr>
+                    <!-- Define th elements for each column header -->
+                    <th scope="col" colspan="2">Group</th> <!-- Scope and colspan added to associate with column header -->
+                    <th scope="col">Planet Name</th> <!-- Scope added to associate with column header -->
+                    <th scope="col">Mean Radius</th> <!-- Scope added to associate with column header -->
+                    <!-- Add more th elements if you have more columns -->
+                </tr>
+            </thead>
+            
+            <!-- Table body -->
+            <tbody>
+                <!-- Content rows inside the table body to display the data -->
+                <tr>
+                    <!-- Define th element for row header -->
+                    <th scope="rowgroup" rowspan="4">Jovian Planets</th> <!-- Scope and rowspan added to associate with row header -->
+                    <th scope="row" rowspan="4">Gas Giants</th> <!-- Scope and rowspan added to associate with row header -->
+                    <td>Jupiter</td> <!-- Scope added to associate with row header -->
+                    <td>69,911 km</td>
+                </tr>
+                <!-- Add more rows with similar structure for additional data -->
+            </tbody>
+        </table>
+        <!-- You do not need a table footer for this assessment -->
+    </main>
+</body>
 </html>
+
